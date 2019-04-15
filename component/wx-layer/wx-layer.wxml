@@ -1,0 +1,25 @@
+<!--自定义遮罩层  -->
+<template name="wxLayer">
+
+  <view class="mask_layer-bg" wx:if="{{ _mask_show_ }}"></view>
+
+  <view wx:if="{{_loading_show}}" class='loading-panel'>
+    <view class="loading-icon"></view>
+    <view class='loading-text'>{{_loading_text}}</view>
+  </view>
+
+  <view class="toast-content" wx:if="{{ _toast_show_ }}">  
+    <view class="toast-content-text">{{_toast_content}}</view>  
+  </view> 
+
+  <view class='modal-content-box black-mask' wx:if="{{_modal_show}}" bindtap='{{_modal_mask?"":"_modalcancel_"}}'></view>
+  <view class='modal-pannel' wx:if="{{_modal_show}}">
+    <view class='modal-title' wx:if="{{_modal_title}}">{{_modal_title}}</view>
+    <view class='modal-content'>{{_modal_content}}</view>
+    <view class='modal-btn'>
+      <view class='modal-confirm-btn' catchtap='_modalcomfirm_'>{{_modal_confirm_text}}</view>
+      <view class='modal-concal-btn' catchtap='_modalcancel_' wx:if="{{_modal_show_concal}}">{{_modal_cancel_text}}</view>
+    </view>
+  </view>
+  
+</template>

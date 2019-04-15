@@ -1,0 +1,6 @@
+@import '../component/wx-layer/wx-layer.wxss';
+
+.intro {
+  margin: 30px;
+  text-align: center;
+}

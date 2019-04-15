@@ -1,0 +1,8 @@
+<import src='../component/wx-layer/wx-layer.wxml' />
+<template is="wxLayer" data="{{...wxLayer}}"/>
+
+<button type="primary" bindtap='_showToast'>toast</button>
+
+<button type="primary" bindtap='_showModel'>model</button>
+
+<button type="primary" bindtap='_loading'>loading</button>
