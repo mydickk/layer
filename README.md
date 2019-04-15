@@ -34,28 +34,31 @@ Page({
 ```
 
 ### 使用
-1、toast: this.showToast(title, duration, mask);
-|参数|类型  |默认|是否必须| 说明|
-|--|--|--|--|--|
-| title| string| |yes|内容|
-|duration| number|2000|no| 持续时间|
+1、toast: this.showToast(title, duration, mask); 
+
+|参数|类型 |默认|是否必须| 说明| 
+|--|--|--|--|--| 
+| title| string| |yes|内容| 
+|duration| number|2000|no| 持续时间| 
 |mask|boolean|false|no|是否使用遮罩层|
 
 2、model: this.showModal({title, content, confirmText, cancelText, confirm, showCancel, mask});
-|参数|类型|默认|是否必须|说明|
-|--|--|--|--|--|
-|title|string||no|标题|
-|content|string||yes|提示内容|
-|confirmText|string|确认|no|确认按钮文案|
-|cancelText|string||no|取消按钮文案|
-|confirm|function| |no|点击确认回调|
-|showCancel|boolean|false|no|是否显示取消按钮|
+
+|参数|类型|默认|是否必须|说明| 
+|--|--|--|--|--| 
+|title|string||no|标题| 
+|content|string||yes|提示内容| 
+|confirmText|string|确认|no|确认按钮文案| 
+|cancelText|string||no|取消按钮文案| 
+|confirm|function| |no|点击确认回调| 
+|showCancel|boolean|false|no|是否显示取消按钮| 
 |mask|boolean|false|no|是否使用遮罩层|
 
-3、loading: this.showLoading(mask,text);
-|参数|类型  |默认|是否必须| 说明|
-|--|--|--|--|--|
-| text| string| |no|loading文案|
+3、loading: this.showLoading(mask,text); 
+
+|参数|类型 |默认|是否必须| 说明| 
+|--|--|--|--|--| 
+| text| string| |no|loading文案| 
 |mask|boolean|false|no|是否使用遮罩层|
 
 
